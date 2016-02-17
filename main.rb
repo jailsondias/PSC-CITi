@@ -2,25 +2,18 @@ require File.expand_path("cadastrado.rb")
 require File.expand_path("bd.rb")
 # require 'Marshall'
 
+b = BD.new
+b.adicionar(Cadastrado.new("sdjfbsdkj","asdsa",5,"5"))
+b.adicionar(Cadastrado.new("sdjfbsdkj","asdsa",5,"4"))
+b.adicionar(Cadastrado.new("sdjfj","asd",5,"5"))
+b.adicionar(Cadastrado.new("sdjfbsdkj","asdsa",5,"5"))
 
-
-# coding: utf-8
-# class BancoDeArquivos
-#     def salva(livro)
-#         File.open("bd/livros.jcd2", "a") do |arquivo|
-#             # arquivo.puts Marshall.dump(livro)
-#         end
-#     end
-#     def carrrega
-#         $/ = "\n"
-#         File.open("bd/livros.jcd2", "r").map do |arquivo|
-#             puts arquivo
-#         end
-#     end
-# end
-p Cadastrado.superclass
-p BD.superclass
+puts b.todos
+# p Cadastrado.superclass
+# p BD.superclass
 # p BancoDeArquivos.superclass
 
+# puts "ndfbsd".eql?"ndfbsd"
 
-puts Cadastrado.new "Jailson","jcd2","sjdfnsdk","fs"
+# puts Cadastrado.new "Jailson","jcd2","sjdfnsdk","fs"
+
