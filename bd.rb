@@ -1,4 +1,4 @@
-class Biblioteca
+class BD
     def initialize
         @livros = {}
     end
